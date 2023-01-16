@@ -813,9 +813,13 @@ cdef class DHT_BASE:
     def bootstarp(
         self,
         addresses=[
+            ("router.bittorrent.com", 6881),
             ("router.utorrent.com", 6881),
             ("grenade.genua.fr", 6880),
-            ("dht.transmissionbt.com", 6881)
+            ("dht.transmissionbt.com", 6881),
+            ("67.215.246.10", 6881),  # router.bittorrent.com
+            ("82.221.103.244", 6881),  # router.utorrent.com
+            ("87.98.162.88", 6881),  # dht.transmissionbt.com
         ]
     ):
         """
